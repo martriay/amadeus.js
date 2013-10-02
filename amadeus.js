@@ -3,11 +3,13 @@ module.exports = Amadeus;
 function Amadeus(){};
 
 Amadeus.prototype.jonico    = function(x) { return modo(0,x); }
+Amadeus.prototype.mayor     = function(x) { return modo(0,x); }
 Amadeus.prototype.dorico    = function(x) { return modo(1,x); }
 Amadeus.prototype.frigio    = function(x) { return modo(2,x); }
 Amadeus.prototype.lidio     = function(x) { return modo(3,x); }
 Amadeus.prototype.mixolidio = function(x) { return modo(4,x); }
 Amadeus.prototype.eolico    = function(x) { return modo(5,x); }
+Amadeus.prototype.menor     = function(x) { return modo(5,x); }
 Amadeus.prototype.locrio    = function(x) { return modo(6,x); }
 
 // Internas
