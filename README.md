@@ -21,4 +21,4 @@ Simply require `amadeus.js` and ask for a mode
 ['La#', 'Si', 'Do#', 'Re#', 'Mi', 'Fa#', 'Sol#']
 
 ```
-Works with latin notation (Do, Re, Mi, etc) and suppors the following modes: `jonico` (also works with `mayor`), `dorico`, `frigio`, `lidio`, `mixolidio`, `eolico` (also works with `menor`), `locrio`
+Works with latin notation (Do, Re, Mi, etc) and supports the following modes: `jonico` (also works with `mayor`), `dorico`, `frigio`, `lidio`, `mixolidio`, `eolico` (also works with `menor`), `locrio`
