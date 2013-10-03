@@ -26,28 +26,17 @@ function notas (x) {
 }
 
 function tonalidad (x) {
-  var tonalidad = [];
-
-  escala.forEach(function (e){
-    var n = x == 6 && e == 5 ? 6 : e
-      , nota = notas(x)[(n + x) % 12]
-      ;
-    tonalidad.push(nota);
-  });
-
-  return tonalidad;
+  return escala.reduce(function (acc, curr, i){
+    var n = x == 6 && curr == 5 ? 6 : curr;
+    return acc.concat(notas(x)[(n + x) % 12]);
+  },[]);
 }
 
 function modo (a, b){
   var c = num2nota(b)
-    , modo = []
-    , t = tonalidad(12 + c - escala[a])
-    ;
-  for(i = 0; i <= 6; i++){
-    modo.push(t[(i + a) % 7]);
-  }
-
-  return modo;
+  return [0,1,2,3,4,5,6].reduce(function (acc, curr, i){
+    return acc.concat(tonalidad(12 + c - escala[a])[(i + a) % 7]);
+  },[]);
 }
 
 function num2nota(x) {
