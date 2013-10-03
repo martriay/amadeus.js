@@ -32,8 +32,8 @@ function tonalidad (x) {
   },[]);
 }
 
-function modo (a, b){
-  var c = num2nota(b)
+function modo (a, b) {
+  var c = num2nota(b);
   return [0,1,2,3,4,5,6].reduce(function (acc, curr, i){
     return acc.concat(tonalidad(12 + c - escala[a])[(i + a) % 7]);
   },[]);
