@@ -41,7 +41,7 @@ function modo (a, b){
 
 function num2nota(x) {
   var a = x.toLowerCase();
-	return nota[a] || 12;
+  return nota[a] || 12;
 }
 
 var nota = {
