@@ -2,16 +2,12 @@ module.exports = Amadeus;
 
 function Amadeus(){};
 
-Amadeus.prototype.jonico    = modo.bind(undefined,0);
-Amadeus.prototype.dorico    = modo.bind(undefined,1);
-Amadeus.prototype.frigio    = modo.bind(undefined,2);
-Amadeus.prototype.lidio     = modo.bind(undefined,3);
-Amadeus.prototype.mixolidio = modo.bind(undefined,4);
-Amadeus.prototype.eolico    = modo.bind(undefined,5);
-Amadeus.prototype.locrio    = modo.bind(undefined,6);
+['jonico', 'dorico', 'frigio', 'lidio', 'mixolidio', 'eolico', 'locrio'].forEach(function(m,i){
+  Amadeus.prototype[m] = modo.bind(undefined,i);
+});
 
-Amadeus.prototype.mayor     = Amadeus.prototype.jonico;
-Amadeus.prototype.menor     = Amadeus.prototype.eolico;
+Amadeus.prototype.mayor = Amadeus.prototype.jonico;
+Amadeus.prototype.menor = Amadeus.prototype.eolico;
 
 // Internas
 
