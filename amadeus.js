@@ -12,7 +12,20 @@ Amadeus.prototype.menor = Amadeus.prototype.eolico;
 // Internas
 
 function notas (x) {
-  var todas = [['Do','Do'],['Do#','Reb'],['Re','Re'],['Re#','Mib'],['Mi','Mi'],['Fa','Fa'],['Fa#','Solb'],['Sol','Sol'],['Sol#','Lab'],['La','La'],['La#','Sib'],['Si','Dob']]
+  var todas = [
+        ['Do','Do']
+      , ['Do#','Reb']
+      , ['Re','Re']
+      , ['Re#','Mib']
+      , ['Mi','Mi']
+      , ['Fa','Fa']
+      , ['Fa#','Solb']
+      , ['Sol','Sol']
+      , ['Sol#','Lab']
+      , ['La','La']
+      , ['La#','Sib']
+      , ['Si','Dob']
+      ]
     , i = [0,2,4,7,9,11].indexOf(x % 12) != -1 ? 0 : 1
     ;
 
@@ -41,27 +54,27 @@ function num2nota(x) {
 }
 
 var nota = {
-	'do': 0,
-	'si#': 0,
-	'do#': 1,
-	'reb': 1,
-	're': 2,
-	're#': 3,
-	'mib': 3,
-	'mi': 4,
-	'fab': 4,
-	'fa': 5,
-	'mi#': 5,
-	'fa#': 6,
-	'solb': 6,
-	'sol': 7,
-	'sol#': 8,
-	'lab': 8,
-	'la': 9,
-	'la#': 10,
-	'sib': 10,
-	'si': 11,
-	'dob': 11
+   'do'  : 0
+ , 'si#' : 0
+ , 'do#' : 1
+ , 'reb' : 1
+ , 're'  : 2
+ , 're#' : 3
+ , 'mib' : 3
+ , 'mi'  : 4
+ , 'fab' : 4
+ , 'fa'  : 5
+ , 'mi#' : 5
+ , 'fa#' : 6
+ , 'solb': 6
+ , 'sol' : 7
+ , 'sol#': 8
+ , 'lab' : 8
+ , 'la'  : 9
+ , 'la#' : 10
+ , 'sib' : 10
+ , 'si'  : 11
+ , 'dob' : 11
 };
 
 var escala = (function () {
